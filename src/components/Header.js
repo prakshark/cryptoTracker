@@ -13,17 +13,16 @@ import {
 } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
-import BlogButton from "./Banner/BlogButton";
-import StockButton from "./Banner/StockButton";
-import CalculatorButton from "./Banner/CalculatorButton";
 
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
-    color: "gold",
-    fontFamily: "Montserrat",
+    color: "#808080",
+    fontFamily: "'Orbitron', sans-serif",
     fontWeight: "bold",
     cursor: "pointer",
+    textShadow: "0 0 10px rgba(128, 128, 128, 0.5)",
+    letterSpacing: "2px",
   },
 }));
 
@@ -44,10 +43,6 @@ function Header() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-    <h4 style={{marginLeft: "10px", paddingTop: "10px"}}>Other Services: </h4> 
-      <BlogButton/>
-      <StockButton/>
-      <CalculatorButton/>
       <AppBar color="transparent" position="static">
         <Container>
           <Toolbar>
@@ -56,10 +51,9 @@ function Header() {
               variant="h6"
               className={classes.title}
             >
-              Team: NodeCodeMode
+              Crypto Tracker
             </Typography>
 
-            {/* <Button color="inherit">Login</Button> */}
             <Select
               variant="outlined"
               labelId="demo-simple-select-label"

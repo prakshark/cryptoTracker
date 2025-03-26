@@ -43,16 +43,6 @@ function Banner() {
           >
             Crypto Tracker
           </Typography>
-          <Typography
-            variant="subtitle2"
-            style={{
-              color: "darkgrey",
-              textTransform: "capitalize",
-              fontFamily: "Montserrat",
-            }}
-          >
-            Created by the team: NodeCodeMode
-          </Typography>
         </div>
         <Carousel />
       </Container>
